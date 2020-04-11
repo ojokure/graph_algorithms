@@ -41,6 +41,7 @@ class Graph(abc.ABC):
 
 # Adjacency Matrix
 
+
 class AdjacencyMatrixGraph(Graph):
     def __init__(self, numVertices, directed=False):
         super(AdjacencyMatrixGraph, self).__init__(numVertices, directed)
