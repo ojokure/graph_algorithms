@@ -152,3 +152,6 @@ for i in range(4):
         print("edge weight: ", i, "", j, "weight: ", g.get_edge_weight(i, j))
 
 g.display()
+
+
+
