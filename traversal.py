@@ -24,3 +24,15 @@ def breadth_first(graph, start=0):
         for v in graph.get_adjacent_vert(vertex):
             if visited[v] != 1:
                 queue.put(v)
+
+
+def depth_first(graph, visited, current = 0):
+    if visited[current] == 1:
+        return 
+
+    visited[current] = 1
+
+    print("visited:", current)
+
+    for vertex in graph.get_adjacent_vert(current):
+        depth_first(graph, visited, vertex)
